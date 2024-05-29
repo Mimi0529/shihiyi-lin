@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的個人網站</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f3e5d5;
+            color: #5a4636;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #d4b895;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #b89e82;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        .container {
+            padding: 20px;
+        }
+        .recipe, .gallery, .videos, .contact, .shop {
+            margin-bottom: 40px;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: #d4b895;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>歡迎來到我的個人網站</h1>
+    </header>
+    <nav>
+        <a href="#recipes">食譜</a>
+        <a href="#gallery">圖片</a>
+        <a href="#videos">影片</a>
+        <a href="#contact">聯絡我</a>
+        <a href="#shop">購物</a>
+    </nav>
+    <div class="container">
+        <section id="recipes" class="recipe">
+            <h2>食譜</h2>
+            <article>
+                <h3>食譜名稱1</h3>
+                <img src="recipe1.jpg" alt="食譜1圖片">
+                <p>這是食譜1的描述和做法。</p>
+            </article>
+            <article>
+                <h3>食譜名稱2</h3>
+                <img src="recipe2.jpg" alt="食譜2圖片">
+                <p>這是食譜2的描述和做法。</p>
+            </article>
+        </section>
+        <section id="gallery" class="gallery">
+            <h2>圖片</h2>
+            <img src="gallery1.jpg" alt="圖片1">
+            <img src="gallery2.jpg" alt="圖片2">
+        </section>
+        <section id="videos" class="videos">
+            <h2>影片</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/你的影片ID" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section id="contact" class="contact">
+            <h2>聯絡我</h2>
+            <form action="mailto:你的郵箱@example.com" method="post" enctype="text/plain">
+                <label for="name">姓名:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="message">留言:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+                <input type="submit" value="送出">
+            </form>
+        </section>
+        <section id="shop" class="shop">
+            <h2>購物</h2>
+            <p>訪問我們的<a href="https://shoppingplatform.com">購物平台</a>來購買更多產品。</p>
+        </section>
+    </div>
+    <footer>
+        <p>© 2024 我的個人網站</p>
+    </footer>
+</body>
+</html>
